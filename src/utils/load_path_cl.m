@@ -18,7 +18,7 @@ wekaPath = ['-cp ' '"' wekajar '"'];
 
 
 function [dirs rootdir] = subdirs()
-% DIRS Returns FVQIT's subdirs
+% DIRS Returns subdirs
 %
 % Authors  : Iago Porto-Diaz, Oscar Fontenla-Romero, Amparo Alonso-Betanzos
 %            Laboratory for Research and Development in Artificial Intelligence
@@ -33,7 +33,6 @@ else
  d = dbstack; 
  rootdir = fileparts(d(1).name);
 end   
-
 
 if 0
     % Might be a relative path: convert to absolute
@@ -52,6 +51,7 @@ subdirs0 = {
     'lib';
     'lib\libsvm-mat-2.9-1';
     'lib\weka';
+    'main';
 };
 
 t=1;
